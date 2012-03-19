@@ -7,7 +7,7 @@
 let fibSeq = Seq.unfold (fun (a,b) ->  Some(a,(b, a+b))) (0,1)
 
 fibSeq 
-|> Seq.takeWhile (fun n -> n < 4000000) 
+|> Seq.takeWhile ((>) 4000000) 
 |> Seq.sumBy (fun x-> if x%2=0 then x else 0)
 |> printf "%d"
 
