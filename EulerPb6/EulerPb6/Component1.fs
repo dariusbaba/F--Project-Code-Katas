@@ -8,7 +8,14 @@
 //
 //Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 
-let sumOfSquares n = seq {1 .. n} |> Seq.map (fun x -> x * x) |>Seq.sum
-let squareOfSum n = seq {1 .. n} |> Seq.sum |> fun x -> x *x  
+let sumOfSquares n = 
+  seq {1 .. n} 
+  |> Seq.map (fun x -> x * x) 
+  |> Seq.sum
+  
+let squareOfSum n = 
+  seq {1 .. n} 
+  |> Seq.sum 
+  |> fun x -> x *x  
 
 let dif n=  squareOfSum n - sumOfSquares n 
