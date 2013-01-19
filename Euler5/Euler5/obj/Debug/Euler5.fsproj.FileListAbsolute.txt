@@ -1,0 +1,5 @@
+C:\PersonalWork\F#\F--Project-Code-Katas\Euler5\Euler5\obj\Debug\Euler5.fsprojResolveAssemblyReference.cache
+C:\PersonalWork\F#\F--Project-Code-Katas\Euler5\Euler5\bin\Debug\Euler5.dll
+C:\PersonalWork\F#\F--Project-Code-Katas\Euler5\Euler5\bin\Debug\Euler5.pdb
+C:\PersonalWork\F#\F--Project-Code-Katas\Euler5\Euler5\obj\Debug\Euler5.dll
+C:\PersonalWork\F#\F--Project-Code-Katas\Euler5\Euler5\obj\Debug\Euler5.pdb

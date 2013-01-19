@@ -5,9 +5,8 @@
 
 //2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 //What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
-module EulerProblems
-open System.Numerics
-open System
+
+
 
 let rec tryFactors lowerBound upperBound result =
     if lowerBound <= upperBound then
@@ -26,15 +25,8 @@ let mapPrimesToTuples x =
     x |> Seq.countBy (fun p -> p)
     
 let generateFactors n =
-   seq {n .. -1 .. 2} 
-   |> Seq.map (fun x -> getPrimes x) 
-   |> Seq.map mapPrimesToTuples
-   |> Seq.concat   
-   |> Seq.groupBy (fun x -> fst x)
-   |> Seq.map (fun x ->  Seq.max (snd x))
-   |> Seq.fold (fun acc x -> acc * ( Convert.ToDouble(fst x) **  Convert.ToDouble(fst x))) 1.0
-     
-
-
-
-
+   seq {2 .. n} 
+   |> Seq.map (fun x -> getPrimes x)
+   |> Seq.map (fun x -> mapPrimesToTuples x)
+   
+   //now we need to find select the seq where we get the biggest count for a factor...
