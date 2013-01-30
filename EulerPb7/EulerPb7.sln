@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "EulerPb7", "EulerPb7\EulerPb7.fsproj", "{E2E27F83-B015-44EF-BB24-F066C36B41EA}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "EulerPb7", "EulerPb7\EulerPb7.fsproj", "{E2E27F83-B015-44EF-BB24-F066C36B41EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +13,9 @@ Global
 		{E2E27F83-B015-44EF-BB24-F066C36B41EA}.Debug|x86.Build.0 = Debug|x86
 		{E2E27F83-B015-44EF-BB24-F066C36B41EA}.Release|x86.ActiveCfg = Release|x86
 		{E2E27F83-B015-44EF-BB24-F066C36B41EA}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = EulerPb7\EulerPb7.fsproj
