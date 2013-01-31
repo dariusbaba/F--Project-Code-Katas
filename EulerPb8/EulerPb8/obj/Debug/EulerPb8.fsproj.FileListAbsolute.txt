@@ -1,0 +1,8 @@
+C:\PersonalWork\F#\F--Project-Code-Katas\EulerPb8\EulerPb8\bin\Debug\EulerPb8.exe.config
+C:\PersonalWork\F#\F--Project-Code-Katas\EulerPb8\EulerPb8\bin\Debug\EulerPb8.XML
+C:\PersonalWork\F#\F--Project-Code-Katas\EulerPb8\EulerPb8\bin\Debug\EulerPb8.exe
+C:\PersonalWork\F#\F--Project-Code-Katas\EulerPb8\EulerPb8\bin\Debug\EulerPb8.pdb
+C:\PersonalWork\F#\F--Project-Code-Katas\EulerPb8\EulerPb8\bin\Debug\FSharp.Core.dll
+C:\PersonalWork\F#\F--Project-Code-Katas\EulerPb8\EulerPb8\bin\Debug\FSharp.Core.xml
+C:\PersonalWork\F#\F--Project-Code-Katas\EulerPb8\EulerPb8\obj\Debug\EulerPb8.exe
+C:\PersonalWork\F#\F--Project-Code-Katas\EulerPb8\EulerPb8\obj\Debug\EulerPb8.pdb
