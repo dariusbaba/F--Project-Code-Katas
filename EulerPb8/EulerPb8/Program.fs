@@ -54,14 +54,9 @@ let Do (s:string) =
               |> Seq.ofArray 
               |> Seq.map (fun x-> Int32.TryParse(x.ToString()))
               |> Seq.filter (fun x -> fst x)
-              |> Seq.map (fun x -> snd x)
+              |> Seq.map (fun x -> snd x)      
+              |> Seq.toArray        
    data
-   |> Seq.mapi (fun i v -> 
-                            match i with
-                            | x when x < chars.Length-6 ->
-                                                            data 
-                                                            |>Seq.skip i
-                                                            |>Seq.take (i+5)
-                                                            |>Seq.reduce (*)
-                            | _ -> 0)
-   |> Seq.max
+
+   |> Array.mapi (fun i v ->Array.map (fun x -> data.[i..i+5] |> Array.reduce (*)))
+   |> Array.max
