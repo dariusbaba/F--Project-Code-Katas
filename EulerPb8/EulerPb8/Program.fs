@@ -55,8 +55,12 @@ let Do (s:string) =
               |> Seq.map (fun x-> Int32.TryParse(x.ToString()))
               |> Seq.filter (fun x -> fst x)
               |> Seq.map (fun x -> snd x)      
-              |> Seq.toArray        
+              |> Seq.toList
    data
-
-   |> Array.mapi (fun i v ->Array.map (fun x -> data.[i..i+5] |> Array.reduce (*)))
-   |> Array.max
+   |> List.mapi (fun i v ->  
+                             match i with 
+                             | x  when x < data.Length-5 -> [for index in i .. i+5 -> data.[index]]
+                                                              |>List.reduce (*) 
+                             | _ -> [for index in i .. data.Length-1-> data.[index]]
+                                                              |>List.reduce (*))    
+   |>List.max    
